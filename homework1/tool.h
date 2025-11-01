@@ -14,4 +14,4 @@ bool full(DblStack S);
 bool push0(DblStack& s , int value);
 bool push1(DblStack& s , int value);
 bool pop0(DblStack &s , int& a);
-bool pop1(DblStack &s , int& a);
+bool pop1(DblStack &s , int& a); 
