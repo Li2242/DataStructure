@@ -1,0 +1,17 @@
+# 1. C 语言编译产物（你的约瑟夫环项目会生成）
+*.exe        # 忽略所有可执行文件（比如 josephus.exe）
+*.o          # 忽略编译中间文件（.o 目标文件）
+*.out        # 忽略 Linux 下的编译产物
+
+# 2. VS Code 配置文件（避免提交本地 IDE 配置）
+.vscode/     # 忽略 .vscode 文件夹（含调试配置、插件设置等）
+*.code-workspace  # 忽略 VS Code 工作区文件
+
+# 3. 系统缓存/临时文件（Windows/Mac 通用）
+.DS_Store    # Mac 系统自动生成的缓存文件
+Thumbs.db    # Windows 缩略图缓存
+*.tmp        # 忽略所有临时文件
+
+# 4. 可选：日志/备份文件
+*.log        # 忽略日志文件
+*.bak        # 忽略备份文件（比如 test.c.bak）

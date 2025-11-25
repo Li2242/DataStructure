@@ -2,12 +2,16 @@
 
 void init(DblStack &s, int maxSize){
 	s.m = maxSize;
+	//前针
 	s.top[0] = -1;
 	s.bot[0] = 0;
-	s.top[1] = maxSize - 1;
-	s.bot[1] = maxSize;
+	//后针
+	s.top[1] = maxSize;
+	s.bot[1] = maxSize - 1;
+	//提示
 	printf("初始化成功！");
 }
+
 bool empty0(DblStack S){
 	return S.top[0] == -1;
 }
@@ -16,6 +20,7 @@ bool empty1(DblStack S){
 	return S.top[1] == S.m;
 }
 
+//栈是否满了
 bool full(DblStack s){
 	return s.top[0] == s.top[1] - 1;
 };
